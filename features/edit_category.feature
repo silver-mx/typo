@@ -6,7 +6,7 @@ Feature: Edit categories
 	Background:
 	  Given the blog is set up
 	  And I am logged into the admin panel
-	  And the following categories exist:
+	  And the following "categories" exist:
 	  | name      | keywords          | description       |
 	  | test_name | category, test    | this is something |
 

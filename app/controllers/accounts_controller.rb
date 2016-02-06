@@ -24,6 +24,7 @@ class AccountsController < ApplicationController
 
       if logged_in?
         session[:user_id] = self.current_user.id
+        session[:profile_id] = self.current_user.profile_id
 
         if params[:remember_me] == "1"
           self.current_user.remember_me unless self.current_user.remember_token?
